@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Iori Yoshida",
-    template: "%s · Iori Yoshida",
+    default: "Eric Lee",
+    template: "%s · Eric Lee",
   },
   description:
-    "Iori Yoshida — senior software engineer specializing in full-stack development and AI-powered software.",
+    "Eric Lee — senior software engineer specializing in full-stack development and AI-powered software.",
 };
 
 export default function RootLayout({

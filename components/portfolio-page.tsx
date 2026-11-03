@@ -250,7 +250,7 @@ export function PortfolioPage() {
             onClick={scrollToSection("home")}
             className="text-lg font-semibold tracking-tight text-[var(--foreground)] transition-colors hover:text-[var(--accent)]"
           >
-            Iori Yoshida
+            Eric Lee
           </a>
           <nav className="hidden items-center gap-1 md:flex">
             {nav.map((item) => (
@@ -304,7 +304,7 @@ export function PortfolioPage() {
               variants={fadeUp(reduce)}
               className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--muted)]"
             >
-              I am Iori Yoshida, a senior software engineer. I build full-stack systems and
+              I am Eric Lee, a senior software engineer. I build full-stack systems and
               AI-powered products—from architecture and APIs to reliable, observable production
               services.
             </motion.p>
@@ -537,7 +537,7 @@ export function PortfolioPage() {
         <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 sm:gap-8 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
             <p className="max-w-sm text-sm leading-relaxed text-[var(--muted)]">
-              © {new Date().getFullYear()} Iori Yoshida. All rights reserved.
+              © {new Date().getFullYear()} Eric Lee. All rights reserved.
             </p>
             <div className="flex flex-wrap items-center gap-3 sm:justify-end">
               <a
