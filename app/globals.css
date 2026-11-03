@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --muted: #64748b;
+  --card: #ffffff;
+  --border: #e2e8f0;
+  --accent: #2563eb;
+  --accent-foreground: #ffffff;
+  --accent-muted: rgba(37, 99, 235, 0.12);
+  --ring: rgba(37, 99, 235, 0.35);
+}
+
+.dark {
+  --background: #020617;
+  --foreground: #f1f5f9;
+  --muted: #94a3b8;
+  --card: #0f172a;
+  --border: #1e293b;
+  --accent: #3b82f6;
+  --accent-foreground: #ffffff;
+  --accent-muted: rgba(59, 130, 246, 0.15);
+  --ring: rgba(59, 130, 246, 0.4);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.02);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
